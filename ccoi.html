@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div id="slideShow">
+
+<div class="counter"><span id="counterCurrent"></span> no <span id="counterTotal"></span></div>
+
+<div class="header" hidden>
+    <div>
+        <img src="img/header_logo.png"/>
+
+        <div id="buttonsBar">
+
+            <img onclick="toggleFullScreen()" src="img/fullscreen.png"/>
+            <img onclick="next()" src="img/right.png"/>
+            <img onclick="prev()" src="img/left.png"/>
+
+        </div>
+    </div>
+</div>
+
+<div class="body" id="slide0" first="true">
+    <div class="right">
+
+        <img src="img/s0_bg.jpg"/>
+    </div>
+    <div class="left">
+        <div>
+            <img src="img/big_logo.png"/>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="body" id="slide1">
+
+
+    <div class="items">
+        <div class="item item1">
+            <img src="img/s1_item1.png"/>
+
+            <div class="mediaText">
+                TV
+            </div>
+        </div>
+        <div class="item item2">
+            <img src="img/s1_item2.png"/>
+
+            <div class="mediaText">
+                Radio
+            </div>
+        </div>
+        <div class="item item3">
+            <img src="img/s1_item3.png"/>
+
+            <div class="mediaText">
+                Prese
+            </div>
+        </div>
+        <div class="item item4">
+            <img src="img/s1_item4.png"/>
+
+            <div class="mediaText">
+                Internets
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="body" id="slide2">
+    <div class="question">
+        Kas ir <img src="img/s2_logo.png"/> ?
+    </div>
+    <div class="answer1">
+        Vienots vides reklāmas
+        auditorijas mērīšanas instruments
+    </div>
+    <div class="answer2">
+        Šis jaunais instruments balstīts
+        uz četru dažādu pētījumu datiem
+    </div>
+    <div class="columns">
+        <div class="col col1">
+            <div class="top"></div>
+            <div class="bottom">
+                <span>01</span>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/s2_1.png"/>
+                </div>
+                <div class="text">
+                    Auditorijas
+                    pārvietošanās
+                    paradumi
+                </div>
+            </div>
+        </div>
+        <div class="col col2">
+            <div class="top">
+                <div></div>
+            </div>
+            <div class="bottom">
+                <span>02</span>
+
+                <div></div>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/s2_2.png"/>
+                </div>
+                <div class="text">
+                    Satiksmes plūsma
+                </div>
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="top">
+                <div></div>
+            </div>
+            <div class="bottom">
+                <span>03</span>
+
+                <div></div>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/s2_3.png"/>
+                </div>
+                <div class="text">
+                    Reklāmas
+                    virsmu
+                    klasifikācija
+                </div>
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="top"></div>
+            <div class="bottom">
+                <span>04</span>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/s2_4.png"/>
+                </div>
+                <div class="text">
+                    Vides reklāmas
+                    uztveres
+                    pētījums
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body" id="slide3">
+    <div class="cols">
+        <div class="col col2">
+            <div class="num">02</div>
+            <div class="img">
+                <img class="img" src="img/s2_2.png"/>
+            </div>
+            <div class="label">
+                Satiksmes plūsma
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="num">03</div>
+            <div class="img">
+                <img class="img" src="img/s2_3.png"/>
+            </div>
+
+            <div class="label">
+                Reklāmas
+                virsmu
+                klasifikācija
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="num">04</div>
+            <div class="img">
+                <img class="img" src="img/s2_4.png"/>
+            </div>
+
+            <div class="label">
+                Vides reklāmas
+                uztveres
+                pētījums
+            </div>
+        </div>
+
+        <div class="col col1">
+            <div class="num">01</div>
+            <div class="img">
+                <img src="img/s2_1.png"/>
+            </div>
+            <div class="label">
+                Auditorijas
+                pārvietošanās
+                paradumi
+            </div>
+            <div class="amount secondary">
+                1250
+            </div>
+            <div class="text secondary">
+                <span>
+                aktīvo respondentu vecumā no
+                    </span>
+            </div>
+            <div class="interval secondary">15-74</div>
+            <div class="years secondary">gadiem</div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="map">
+            <div class="mapContainer">
+                <img class="img" src="img/map.png"/>
+
+                <div class="paths">
+                    <img class="path path1" src="img/path_1.png"/>
+                    <img class="path path2" src="img/path_2.png"/>
+                    <img class="path path3" src="img/path_3.png"/>
+                    <img class="path path4" src="img/path_4.png"/>
+                    <img class="path path5" src="img/path_5.png"/>
+                    <img class="path path6" src="img/path_6.png"/>
+                    <img class="path path7" src="img/path_7.png"/>
+                </div>
+                <img src="img/map_icon_bike.png" class="icon icon1" style="bottom: 66%; left: 59%;"/>
+                <img src="img/map_icon_alcohol.png" class="icon icon2" style="bottom: 51%; left: 66.75%;"/>
+                <img src="img/map_icon_market.png" class="icon icon3" style="bottom: 54%; left: 80.5%;"/>
+                <img src="img/map_icon_gas.png" class="icon icon4" style="bottom: 58%; left: 33%;"/>
+                <img src="img/map_icon_cinema.png" class="icon icon5" style="bottom: 24%; left: 51%;"/>
+                <img src="img/map_icon_tram.png" class="icon icon6" style="bottom: 45%; left: 57%;"/>
+                <img src="img/map_icon_bus.png" class="icon icon7" style="bottom: 32%; left: 75%;"/>
+                <img src="img/map_icon_library.png" class="icon icon8" style="bottom: 10%; left: 32%;"/>
+                <img src="img/map_icon_shopping.png" class="icon icon9" style="bottom: 32%; left: 45%;"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="days">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="content">
+            <span class="day">-</span>
+
+            <div>diena</div>
+        </div>
+    </div>
+
+    <div class="boxie">
+        <i>Factum</i> veikts pētījums
+    </div>
+
+    <div class="photos">
+        <div class="photo photo1">
+            <img src="img/s3_photo1.png"/>
+        </div>
+        <div class="photo photo2">
+            <img src="img/s3_photo2.png"/>
+        </div>
+        <div class="photo photo3">
+            <img src="img/s3_photo3.png"/>
+        </div>
+        <div class="photo photo4">
+            <img src="img/s3_photo4.png"/>
+        </div>
+    </div>
+
+    <div class="layers">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="layer layer4"></div>
+    </div>
+
+    <div class="sevendays">
+        7 dienas tika pildīts pārvietošanās žurnāls
+    </div>
+</div>
+
+<div class="body" id="slide4" state="a">
+    <div class="cols">
+        <div class="col col2">
+            <div class="num">02</div>
+            <div class="img">
+                <img class="img" src="img/s2_2.png"/>
+            </div>
+            <div class="label">
+                Satiksmes plūsma
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="num">03</div>
+            <div class="img">
+                <img class="img" src="img/s2_3.png"/>
+            </div>
+
+            <div class="label">
+                Reklāmas
+                virsmu
+                klasifikācija
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="num">04</div>
+            <div class="img">
+                <img class="img" src="img/s2_4.png"/>
+            </div>
+
+            <div class="label">
+                Vides reklāmas
+                uztveres
+                pētījums
+            </div>
+        </div>
+
+        <div class="col col1">
+            <div class="num">01</div>
+            <div class="img">
+                <img src="img/s2_1.png"/>
+            </div>
+            <div class="label">
+                Auditorijas
+                pārvietošanās
+                paradumi
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="list">
+            <ul>
+                <li>Vidējais auto pārvietošanās ātrums
+                    konkrētos maršrutu posmos
+                </li>
+                <li>Auto skaits konkrētos
+                    maršrutu posmos
+                </li>
+                <li>Gājēju skaits</li>
+            </ul>
+        </div>
+        <img class="cars cars1" src="img/s4_cars1.png"/>
+        <img class="cars cars2" src="img/s4_cars2.png"/>
+        <img class="cars cars3" src="img/s4_cars3.png"/>
+    </div>
+    <div class="boxie">
+        RD Satiksmes departamenta,<br>
+        Latvijas Valsts ceļi,<br>
+        NAVTEQ dati<br>
+    </div>
+    <div class="photos">
+        <img src="img/s4_photo_bg.png"/>
+
+        <div>
+            <img src="img/s4_photo1.png"/>
+            <img src="img/s4_photo2.png"/>
+        </div>
+    </div>
+</div>
+
+
+<div class="body" id="slide5" state="a">
+    <div class="cols">
+        <div class="col col2">
+            <div class="num">02</div>
+            <div class="img">
+                <img class="img" src="img/s2_2.png"/>
+            </div>
+            <div class="label">
+                Satiksmes plūsma
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="num">03</div>
+            <div class="img">
+                <img class="img" src="img/s2_3.png"/>
+            </div>
+
+            <div class="label">
+                Reklāmas
+                virsmu
+                klasifikācija
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="num">04</div>
+            <div class="img">
+                <img class="img" src="img/s2_4.png"/>
+            </div>
+
+            <div class="label">
+                Vides reklāmas
+                uztveres
+                pētījums
+            </div>
+        </div>
+
+        <div class="col col1">
+            <div class="num">01</div>
+            <div class="img">
+                <img src="img/s2_1.png"/>
+            </div>
+            <div class="label">
+                Auditorijas
+                pārvietošanās
+                paradumi
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="text">
+            Precīza Clear Channel un JCDecaux
+            vides reklāmas formātu uzskaite un klasifikācija
+        </div>
+        <div class="list">
+            <ul>
+                <li>atrašānās vieta
+                </li>
+                <li>izmēri
+                </li>
+                <li>attālums no ceļa</li>
+                <li>POI</li>
+                <li>apgaismojums</li>
+            </ul>
+        </div>
+        <div class="stands">
+            <img class="stand stand1" src="img/stendi_1.png"/>
+            <img class="stand stand2" src="img/stendi_2.png"/>
+            <img class="stand stand3" src="img/stendi_3.png"/>
+            <img class="stand stand4" src="img/stendi_4.png"/>
+            <img class="stand stand5" src="img/stendi_5.png"/>
+        </div>
+        <div class="photos">
+            <img src="img/s5_pc.png"/>
+
+            <div class="imgs">
+                <div class="img img1">
+                    <img class="photo photo1" src="img/s5_photo1.png"/>
+                </div>
+                <div class="img img2">
+                    <img class="photo photo1" src="img/s5_photo2.png"/>
+                </div>
+                <div class="img img3">
+                    <img class="photo photo1" src="img/s5_photo3.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="boxie1">
+        Rezultātā tiek iegūti dati,<br>
+        cik % auditorijas spēj sasniegt<br>
+        attiecīgais outdoor objekts.*<br>
+    </div>
+    <div class="boxie2">
+        *Industrijas tehniskās komitejas auditētā datu atbilstība.
+    </div>
+</div>
+
+
+<div class="body" id="slide6" state="a">
+    <div class="cols">
+        <div class="col col2">
+            <div class="num">02</div>
+            <div class="img">
+                <img class="img" src="img/s2_2.png"/>
+            </div>
+            <div class="label">
+                Satiksmes plūsma
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="num">03</div>
+            <div class="img">
+                <img class="img" src="img/s2_3.png"/>
+            </div>
+
+            <div class="label">
+                Reklāmas
+                virsmu
+                klasifikācija
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="num">04</div>
+            <div class="img">
+                <img class="img" src="img/s2_4.png"/>
+            </div>
+
+            <div class="label">
+                Vides reklāmas
+                uztveres
+                pētījums
+            </div>
+        </div>
+
+        <div class="col col1">
+            <div class="num">01</div>
+            <div class="img">
+                <img src="img/s2_1.png"/>
+            </div>
+            <div class="label">
+                Auditorijas
+                pārvietošanās
+                paradumi
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="text">
+            Vides reklāmas virsmu
+            novērošanas pētījums
+        </div>
+        <ul>
+            <li>Reklāmas vietas attālums no ceļa</li>
+            <li>Redzamības leņķis</li>
+            <li>Fona troksnis</li>
+            <li>Apgaismojums</li>
+            <li>Acu kontakta fiksācija</li>
+            <li>Vides reklāmas formāta izmērs</li>
+        </ul>
+    </div>
+    <div class="boxie">
+        Šādi pētījumi tika veikti sadarbojoties<br>
+        Paulam Barber (Dr. Paul Barber) no <br>
+        Londonas universitātes un<br>
+        Birkbeka koledžai (Birkbeck College)
+    </div>
+    <div class="imgs">
+        <div class="img img1">
+            <img class="photo photo1" src="img/s6_photo1.png"/>
+        </div>
+        <div class="img img2">
+            <img class="photo photo2" src="img/s6_photo2.png"/>
+        </div>
+        <div class="img img3">
+            <img class="photo photo3" src="img/s6_photo3.png"/>
+        </div>
+        <div class="img img4">
+            <img class="photo photo4" src="img/s6_photo4.png"/>
+        </div>
+    </div>
+</div>
+
+
+<div class="body" id="slide7">
+    <div class="text">
+        Galvenie ieguvumi
+    </div>
+
+    <div class="blocks">
+        <img src="img/spacer.png"/>
+
+        <div class="block green">
+            <img src="img/s7_green.png"/>
+
+            <div class="num">01</div>
+            <div class="name">FLOW</div>
+            <div class="desc">Auditorijas plūsma gar
+                konkrēto outdoor objektu
+            </div>
+        </div>
+        <div class="block yellow">
+            <img src="img/s7_yellow.png"/>
+
+            <div class="num">02</div>
+            <div class="name">OTC/OTS</div>
+            <div class="desc">Iespējamais
+                kontaktu skaits
+            </div>
+        </div>
+        <div class="block orange">
+            <img src="img/s7_orange.png"/>
+
+            <div class="num">03</div>
+            <div class="name">VAC</div>
+            <div class="desc">Faktiskais
+                kontaktu skaits
+            </div>
+        </div>
+        <div class="block purple">
+            <img src="img/s7_purple.png"/>
+
+            <div class="name">CAFAS</div>
+            <div class="desc">Cover and Frequency
+                Audience System
+            </div>
+            <div class="text">
+                CAFAS ir mediju plānošanas rīks, <br>
+                kas nodrošina salīdzināmus rādītājus mediju risinājumiem,<br>
+                kas izvietoti vides reklāmā. Tas dod iespēju iegādāties<br>
+                vides reklāmas mediju pakalpojumus tādā pat veidā,<br>
+                kā citus plašsaziņas līdzekļus
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="body" id="slide8" state="a">
+    <div class="left">
+        <div>
+            Kontakti
+        </div>
+    </div>
+    <div class="right">
+        <div class="contact">
+            <img src="img/cc_logo.png"/><br><br>
+            <span>Jānis Puravs</span><br>
+            pārdošanas vadītājs<br><br>
+
+            Tālr. +371 26 434 991<br>
+            janis.puravs@clearchannel.lv<br>
+        </div>
+
+        <div class="contact">
+            <img src="img/jd_logo.png"/><br><br>
+            <span>Dite Dimante</span><br>
+            mārketinga vadītāja<br><br>
+
+            Tālr. +371 29 164 300<br>
+            dite.dimante@jcdecaux.lv
+        </div>
+
+        <div class="web">
+            www.outdoorimpact.lv
+        </div>
+
+    </div>
+</div>
+
+
+<div class="body" id="slide9">
+    <div class="left">
+        <img src="img/s9_bg.jpg"/>
+    </div>
+    <div class="right">
+        Paldies
+    </div>
+</div>
+
+<script>
+    function Slide(id, statesCount, onactive, onstatechange, onsleep) {
+        this.id = id;
+        this.statesCount = statesCount || 1;
+        this.onactive = onactive;
+        this.onstatechange = onstatechange;
+        this.onsleep = onsleep;
+        this.element = document.getElementById(id);
+        this.setState(0);
+        this.element.setAttribute("next", true);
+    }
+
+    Slide.prototype.setState = function (state) {
+        this.currentState = state;
+        this.element.setAttribute("state", state);
+        this.onstatechange && this.onstatechange();
+    };
+
+    var Slides = {
+        slides: {},
+        slidesArr: [],
+        current: null,
+        currentIndex: -1
+    };
+    Slides.start = function () {
+        this.current = this.slidesArr[0];
+        this.currentIndex = 0;
+        this.current = this.slidesArr[this.currentIndex];
+        this.current.element.setAttribute("active", true);
+        this.current.element.removeAttribute("next");
+        this.current.element.setAttribute("state", 0);
+        this.current.onactive && this.current.onactive();
+
+        document.getElementById("counterCurrent").innerHTML = 1;
+        document.getElementById("counterTotal").innerHTML = this.slidesArr.length;
+    }
+    Slides.create = function (id, statesCount, onactive, onstatechange, onsleep) {
+        var slide = new Slide(id, statesCount, onactive, onstatechange, onsleep);
+        Slides.slides[id] = Slides.slidesArr.push(slide) - 1;
+    };
+
+    Slides.activate = function (id) {
+        var index = this.slides[id],
+                slides = this.slidesArr,
+                oldindex = this.currentIndex,
+                l = slides.length,
+                i;
+
+        for (i = 0; i < l; i++) {
+
+            var slide = slides[i];
+
+            if (i === oldindex) {
+                slide.element.removeAttribute("active");
+                //slide.setState(0);
+                slide.onsleep && slide.onsleep();
+            }
+
+            if (i < index) {
+                slide.element.setAttribute("prev","");
+                slide.element.removeAttribute("next");
+            } else if (i > index) {
+                slide.element.setAttribute("next","");
+                slide.element.removeAttribute("prev");
+            } else {
+                slide.element.removeAttribute("next");
+                slide.element.removeAttribute("prev");
+
+                slide.element.setAttribute("active","");
+
+                slide.setState(0);
+
+                slide.onactive && slide.onactive(oldindex);
+                this.current = slide;
+                this.currentIndex = this.slides[slide.id];
+            }
+
+        }
+
+        document.getElementById("counterCurrent").innerHTML = this.currentIndex + 1;
+    };
+
+    window.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+    });
+
+    window.addEventListener("keyup", function (event) {
+        event.preventDefault();
+
+        if (event.which === 39) {
+            //right arrow
+                   next();
+
+        } else if (event.which === 37) {
+            //left arrow
+            prev();
+        }
+
+    });
+
+    Slides.create("slide0", 1, function () {
+        document.querySelector("#slideShow > .header").setAttribute("hidden","");
+    }, undefined, function () {
+        document.querySelector("#slideShow > .header").removeAttribute("hidden");
+    });
+    Slides.create("slide1", 4);
+    Slides.create("slide2", 8, undefined, function(){
+        var slide = this;
+        setTimeout(function(){
+            if(slide.currentState === 7)
+                Slides.activate("slide3");
+        }, 1000);
+    });
+    Slides.create("slide3", 3, function(old){
+        if(old === 2) {//if prev was slide2
+            this.element.setAttribute("instantSwitch","");
+        }
+        this.setState(1);
+    }, function () {
+        if (this.currentState === 1) {
+            this.element.setAttribute("animate","");
+
+            var slide = this;
+            setTimeout(function () {
+                slide.timer = setInterval(function () {
+                    var day = slide.element.getAttribute("day");
+                    if (day)
+                        day = parseInt(day) + 1;
+                    else day = 1;
+
+                    if (day > 7)return;
+
+                    slide.element.setAttribute("day", day);
+                    slide.element.querySelector(".days .content span").innerHTML = day;
+                }, 1000);
+            }, 1000);
+        }
+    }, function () {
+        clearInterval(this.timer);
+        this.element.removeAttribute("animate");
+        this.element.removeAttribute("instantSwitch");
+    });
+    Slides.create("slide4", 6, function(){
+        var slide = this;
+        setTimeout(function(){
+            slide.setState(1);
+        },600);
+    }, function () {
+        if(this.currentState === 1){
+            this.element.setAttribute("animate","");
+        }
+    }, function(){
+        this.element.removeAttribute("animate");
+    });
+    Slides.create("slide5", 10, function(){
+        var slide = this;
+        setTimeout(function(){
+            slide.setState(1);
+        },600);
+    }, function () {
+        if(this.currentState === 1){
+            this.element.setAttribute("animate","");
+        }
+    }, function(){
+        this.element.removeAttribute("animate");
+    });
+    Slides.create("slide6", 9, function(){
+        var slide = this;
+        setTimeout(function(){
+            slide.setState(1);
+        },600);
+    }, function () {
+        if(this.currentState === 1){
+            this.element.setAttribute("animate","");
+        }
+    }, function(){
+        this.element.removeAttribute("animate");
+    });
+    Slides.create("slide7", 5);
+    Slides.create("slide8");
+    Slides.create("slide9");
+
+    Slides.start();
+    //Slides.activate("slide6");
+
+    function next(){
+        if (Slides.current.currentState < Slides.current.statesCount - 1) {
+            Slides.current.setState(Slides.current.currentState + 1);
+        } else {
+            if (Slides.currentIndex + 1 < Slides.slidesArr.length) {
+                Slides.activate(Slides.slidesArr[Slides.currentIndex + 1].id);
+            }
+        }
+    }
+
+    function prev(){
+
+        if (Slides.currentIndex - 1 >= 0) {
+            Slides.activate(Slides.slidesArr[Slides.currentIndex - 1].id);
+        }
+    }
+
+    function toggleFullScreen() {
+        if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // alternative standard method
+                (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // current working methods
+            if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullScreen) {
+                document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
+
+    var bbar = document.getElementById("buttonsBar"),
+            mt;
+            document.addEventListener("mousemove", function(){
+                bbar.removeAttribute("inactive");
+                if(mt)
+                    clearTimeout(mt)
+
+                mt = setTimeout(function(){
+                    document.getElementById("buttonsBar").setAttribute("inactive","");
+                }, 2000);
+            });
+</script>
+
+<div class="footer"></div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+-->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src='//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>-->
+
+
+</body>
+</html>
